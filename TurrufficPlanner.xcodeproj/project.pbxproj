@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A193CAC2C11E6F200D8BDCD /* HousholdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A193CAB2C11E6F200D8BDCD /* HousholdView.swift */; };
 		0AC84D522C0E460C005424F1 /* TurrufficPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC84D512C0E460C005424F1 /* TurrufficPlannerApp.swift */; };
 		0AC84D542C0E460C005424F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC84D532C0E460C005424F1 /* ContentView.swift */; };
 		0AC84D562C0E460E005424F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC84D552C0E460E005424F1 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A193CAB2C11E6F200D8BDCD /* HousholdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousholdView.swift; sourceTree = "<group>"; };
 		0AC84D4E2C0E460C005424F1 /* TurrufficPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurrufficPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC84D512C0E460C005424F1 /* TurrufficPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurrufficPlannerApp.swift; sourceTree = "<group>"; };
 		0AC84D532C0E460C005424F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				0AC84D582C0E460E005424F1 /* Preview Assets.xcassets */,
+				0A193CAB2C11E6F200D8BDCD /* HousholdView.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				0AC84D542C0E460C005424F1 /* ContentView.swift in Sources */,
 				0AC84D522C0E460C005424F1 /* TurrufficPlannerApp.swift in Sources */,
+				0A193CAC2C11E6F200D8BDCD /* HousholdView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

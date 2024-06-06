@@ -14,44 +14,49 @@ struct ContentView: View {
             
             VStack {
                 Spacer()
-                    .frame(height: 300)
                 
-                Text("Terrufic Planner")
-                    .font(.system(size: 48, weight: .bold, design: .default))
-                    .foregroundColor(.white)
-                    .padding()
-                    Spacer()
+                VStack(spacing: -10) {
+                    Text("Terrufic")
+                        .font(.system(size: 60, weight: .bold, design: .default))
+                        .foregroundColor(.white)
+                    Text("Planner")
+                        .font(.system(size: 60, weight: .bold, design: .default))
+                        .foregroundColor(.white)
+                }
+                .padding()
                 
-                Text("Remember your Pets")
-        .font(.system(size: 24, weight: .medium, design: .default))
-                .foregroundColor(.white)
-                .padding(.bottom, 50)
                 Spacer()
                 
+                Text("Remember your Pets")
+                    .font(.system(size: 30, weight: .medium, design: .default))
+                    .foregroundColor(.white)
+                    .padding(.bottom, 20)
+                
+                
+                Spacer()
                 
                 Image("paw")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 100, height: 100)
+                    .frame(width: 100)
                     .padding(.bottom, 20)
                 
                 
                 
                 Spacer()
-                    .frame(height: 75)
                 
                 Button(action: {
-                 
+                    
                 }) {
                     Text("Get Started")
                         .font(.system(size: 50, weight: .bold, design: .default))
                         .foregroundColor(.white)
                         .padding()
-                        .frame(height: 600)
+//                        .padding(.bottom, 20)
                 }
                 
                 Spacer()
-                    
+                
             }
         }
     }
