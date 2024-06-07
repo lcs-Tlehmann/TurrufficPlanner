@@ -8,56 +8,44 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.green]), startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                Spacer()
+        NavigationView {
+            ZStack {
+                LinearGradient(gradient: Gradient(colors: [Color("darkBlue"), Color("darkGreen")]), startPoint: .top, endPoint: .bottom)
+                    .edgesIgnoringSafeArea(.all)
                 
-                VStack(spacing: -10) {
-                    Text("Terrufic")
-                        .font(.system(size: 60, weight: .bold, design: .default))
-                        .foregroundColor(.white)
-                    Text("Planner")
-                        .font(.system(size: 60, weight: .bold, design: .default))
-                        .foregroundColor(.white)
-                }
-                .padding()
-                
-                Spacer()
-                
-                Text("Remember your Pets")
-                    .font(.system(size: 30, weight: .medium, design: .default))
-                    .foregroundColor(.white)
-                    .padding(.bottom, 20)
-                
-                
-                Spacer()
-                
-                Image("paw")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 100)
-                    .padding(.bottom, 20)
-                
-                
-                
-                Spacer()
-                
-                Button(action: {
+                VStack {
+                    VStack(spacing: -20) {
+                        Text("Terrufic")
+                            .font(.system(size: 75, weight: .bold, design: .default))
+                            .foregroundColor(.white)
+                        Text("Planner")
+                            .font(.system(size: 75, weight: .bold, design: .default))
+                            .foregroundColor(.white)
+                    }
+                    .padding()
                     
-                }) {
-                    Text("Get Started")
-                        .font(.system(size: 50, weight: .bold, design: .default))
+                    Text("Remember Your Pets")
+                        .font(.system(size: 25, weight: .medium, design: .default))
                         .foregroundColor(.white)
                         .padding()
-//                        .padding(.bottom, 20)
+                    
+                    Image("paw")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 100)
+                        .padding()
+                    
+                    Spacer()
+                    
+                    NavigationLink(destination: HouseholdView()) {
+                        Text("Get Started")
+                            .font(.system(size: 50, weight: .bold, design: .default))
+                            .foregroundColor(.white)
+                            .padding()
+                    }
                 }
-                
-                Spacer()
-                
             }
+            .navigationBarHidden(true) 
         }
     }
 }
