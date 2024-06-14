@@ -25,16 +25,16 @@ struct CareEventListView: View {
         NavigationView {
                 VStack {
                     
-                    List($viewModel.todos) { $todo in
+                    List($viewModel.careEvents) { $currentCareEvent in
                         
-                        CareEventView(currentCareEvent: $todo)
+                        CareEventView(currentCareEvent: $currentCareEvent)
                         // Delete item
                             .swipeActions {
                                 Button(
                                     "Delete",
                                     role: .destructive,
                                     action: {
-                                        viewModel.delete(todo)
+                                        viewModel.delete(currentCareEvent)
                                     }
                                 )
                             }
@@ -47,7 +47,7 @@ struct CareEventListView: View {
                         
                         Button("ADD") {
                             // Add the new to-do item
-                            viewModel.createToDo(withTitle: newItemDescription)
+                            viewModel.createCareEvents(withTitle: newItemDescription)
                         }
                         .font(.caption)
                     }

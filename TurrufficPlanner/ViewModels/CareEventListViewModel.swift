@@ -11,33 +11,33 @@ import Foundation
 class CareEventListViewModel {
     
     // MARK: Stored properties
-    // The list of to-do items
-    var todos: [CareEvent]
+    // The list of care events
+    var careEvents: [CareEvent]
     
     // MARK: Initializer(s)
-    init(todos: [CareEvent] = []) {
-        self.todos = todos
+    init(careEvents: [CareEvent] = []) {
+        self.careEvents = careEvents
     }
     
     // MARK: Functions
-    func createToDo(withTitle title: String) {
+    func createCareEvents(withTitle title: String) {
         
         // Create the new to-do item instance
-        let todo = CareEvent(
+        let careEvent = CareEvent(
             petName: title,
             done: false
         )
         
         // Append to the array
-        todos.append(todo)
+        careEvents.append(careEvent)
         
     }
     
-    func delete(_ todo: CareEvent) {
+    func delete(_ event: CareEvent) {
         
         // Remove the provided to-do item from the array
-        todos.removeAll { currentItem in
-            currentItem.id == todo.id
+        careEvents.removeAll { currentEvent in
+            currentEvent.id == event.id
         }
         
     }
