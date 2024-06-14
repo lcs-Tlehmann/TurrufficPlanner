@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		0A193CAC2C11E6F200D8BDCD /* HouseholdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A193CAB2C11E6F200D8BDCD /* HouseholdView.swift */; };
 		0A1D9A262C135B380023E78F /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A252C135B380023E78F /* InformationView.swift */; };
-		0A1D9A282C1361CC0023E78F /* CompletedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A272C1361CC0023E78F /* CompletedListViewModel.swift */; };
-		0A1D9A2A2C1362250023E78F /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A292C1362250023E78F /* LandingView.swift */; };
-		0A1D9A2C2C1362CD0023E78F /* SwiftFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A2B2C1362CD0023E78F /* SwiftFile.swift */; };
-		0A1D9A2E2C1363240023E78F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A2D2C1363240023E78F /* SwiftUIView.swift */; };
+		0A1D9A282C1361CC0023E78F /* CareEventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A272C1361CC0023E78F /* CareEventListViewModel.swift */; };
+		0A1D9A2A2C1362250023E78F /* CareEventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A292C1362250023E78F /* CareEventListView.swift */; };
+		0A1D9A2C2C1362CD0023E78F /* CareEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A2B2C1362CD0023E78F /* CareEvent.swift */; };
+		0A1D9A2E2C1363240023E78F /* CareEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A2D2C1363240023E78F /* CareEventView.swift */; };
 		0AC84D522C0E460C005424F1 /* TurrufficPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC84D512C0E460C005424F1 /* TurrufficPlannerApp.swift */; };
 		0AC84D542C0E460C005424F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC84D532C0E460C005424F1 /* ContentView.swift */; };
 		0AC84D562C0E460E005424F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC84D552C0E460E005424F1 /* Assets.xcassets */; };
@@ -22,10 +22,10 @@
 /* Begin PBXFileReference section */
 		0A193CAB2C11E6F200D8BDCD /* HouseholdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdView.swift; sourceTree = "<group>"; };
 		0A1D9A252C135B380023E78F /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
-		0A1D9A272C1361CC0023E78F /* CompletedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedListViewModel.swift; sourceTree = "<group>"; };
-		0A1D9A292C1362250023E78F /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
-		0A1D9A2B2C1362CD0023E78F /* SwiftFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFile.swift; sourceTree = "<group>"; };
-		0A1D9A2D2C1363240023E78F /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		0A1D9A272C1361CC0023E78F /* CareEventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEventListViewModel.swift; sourceTree = "<group>"; };
+		0A1D9A292C1362250023E78F /* CareEventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEventListView.swift; sourceTree = "<group>"; };
+		0A1D9A2B2C1362CD0023E78F /* CareEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEvent.swift; sourceTree = "<group>"; };
+		0A1D9A2D2C1363240023E78F /* CareEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEventView.swift; sourceTree = "<group>"; };
 		0AC84D4E2C0E460C005424F1 /* TurrufficPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurrufficPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC84D512C0E460C005424F1 /* TurrufficPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurrufficPlannerApp.swift; sourceTree = "<group>"; };
 		0AC84D532C0E460C005424F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +44,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A407BA72C1C80FA00B2F2EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D9A2B2C1362CD0023E78F /* CareEvent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A407BA82C1C811600B2F2EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AC84D532C0E460C005424F1 /* ContentView.swift */,
+				0A1D9A252C135B380023E78F /* InformationView.swift */,
+				0A193CAB2C11E6F200D8BDCD /* HouseholdView.swift */,
+				0A1D9A292C1362250023E78F /* CareEventListView.swift */,
+				0A1D9A2D2C1363240023E78F /* CareEventView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A407BA92C1C819700B2F2EC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D9A272C1361CC0023E78F /* CareEventListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		0AC84D452C0E460C005424F1 = {
 			isa = PBXGroup;
 			children = (
@@ -64,15 +92,11 @@
 			isa = PBXGroup;
 			children = (
 				0AC84D512C0E460C005424F1 /* TurrufficPlannerApp.swift */,
-				0AC84D532C0E460C005424F1 /* ContentView.swift */,
-				0A1D9A252C135B380023E78F /* InformationView.swift */,
-				0A193CAB2C11E6F200D8BDCD /* HouseholdView.swift */,
-				0A1D9A292C1362250023E78F /* LandingView.swift */,
+				0A407BA72C1C80FA00B2F2EC /* Model */,
+				0A407BA82C1C811600B2F2EC /* Views */,
+				0A407BA92C1C819700B2F2EC /* ViewModels */,
 				0AC84D552C0E460E005424F1 /* Assets.xcassets */,
 				0AC84D572C0E460E005424F1 /* Preview Content */,
-				0A1D9A2B2C1362CD0023E78F /* SwiftFile.swift */,
-				0A1D9A2D2C1363240023E78F /* SwiftUIView.swift */,
-				0A1D9A272C1361CC0023E78F /* CompletedListViewModel.swift */,
 			);
 			path = TurrufficPlanner;
 			sourceTree = "<group>";
@@ -155,12 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1D9A2A2C1362250023E78F /* LandingView.swift in Sources */,
+				0A1D9A2A2C1362250023E78F /* CareEventListView.swift in Sources */,
 				0AC84D542C0E460C005424F1 /* ContentView.swift in Sources */,
-				0A1D9A2E2C1363240023E78F /* SwiftUIView.swift in Sources */,
-				0A1D9A282C1361CC0023E78F /* CompletedListViewModel.swift in Sources */,
+				0A1D9A2E2C1363240023E78F /* CareEventView.swift in Sources */,
+				0A1D9A282C1361CC0023E78F /* CareEventListViewModel.swift in Sources */,
 				0A1D9A262C135B380023E78F /* InformationView.swift in Sources */,
-				0A1D9A2C2C1362CD0023E78F /* SwiftFile.swift in Sources */,
+				0A1D9A2C2C1362CD0023E78F /* CareEvent.swift in Sources */,
 				0AC84D522C0E460C005424F1 /* TurrufficPlannerApp.swift in Sources */,
 				0A193CAC2C11E6F200D8BDCD /* HouseholdView.swift in Sources */,
 			);

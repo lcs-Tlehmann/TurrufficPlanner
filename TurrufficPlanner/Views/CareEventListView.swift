@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LandingView: View {
+struct CareEventListView: View {
     
     // MARK: Stored properties
     
@@ -18,7 +18,7 @@ struct LandingView: View {
     @State var searchText = ""
     
     // The view model
-    @State var viewModel = TodoListViewModel()
+    @State var viewModel = CareEventListViewModel()
     
     // MARK: Computed properties
     var body: some View {
@@ -27,7 +27,7 @@ struct LandingView: View {
                     
                     List($viewModel.todos) { $todo in
                         
-                        ItemView(currentItem: $todo)
+                        CareEventView(currentCareEvent: $todo)
                         // Delete item
                             .swipeActions {
                                 Button(
@@ -62,5 +62,5 @@ struct LandingView: View {
 }
 
 #Preview {
-    LandingView()
+    CareEventListView()
 }

@@ -8,14 +8,14 @@
 import Foundation
 
 @Observable
-class TodoListViewModel {
+class CareEventListViewModel {
     
     // MARK: Stored properties
     // The list of to-do items
-    var todos: [TodoItem]
+    var todos: [CareEvent]
     
     // MARK: Initializer(s)
-    init(todos: [TodoItem] = []) {
+    init(todos: [CareEvent] = []) {
         self.todos = todos
     }
     
@@ -23,8 +23,8 @@ class TodoListViewModel {
     func createToDo(withTitle title: String) {
         
         // Create the new to-do item instance
-        let todo = TodoItem(
-            title: title,
+        let todo = CareEvent(
+            petName: title,
             done: false
         )
         
@@ -33,7 +33,7 @@ class TodoListViewModel {
         
     }
     
-    func delete(_ todo: TodoItem) {
+    func delete(_ todo: CareEvent) {
         
         // Remove the provided to-do item from the array
         todos.removeAll { currentItem in

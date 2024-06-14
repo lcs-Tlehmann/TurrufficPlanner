@@ -73,7 +73,7 @@ struct HouseholdView: View {
                 }
                 Spacer()
                 
-                NavigationLink(destination: LandingView()) {
+                NavigationLink(destination: CareEventListView()) {
                     Text("Continue")
                         .font(.system(size: 50, weight: .bold, design: .default))
                         .foregroundColor(.white)
