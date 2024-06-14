@@ -37,7 +37,7 @@ struct ContentView: View {
                     
                     Spacer()
                     
-                    NavigationLink(destination: HouseholdView()) {
+                    NavigationLink(destination: InformationView()) {
                         Text("Get Started")
                             .font(.system(size: 50, weight: .bold, design: .default))
                             .foregroundColor(.white)

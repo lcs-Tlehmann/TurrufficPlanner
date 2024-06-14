@@ -7,12 +7,29 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct ItemView: View {
+    
+    @Binding var currentItem: TodoItem
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Label(
+            title: {
+                TextField("", text: $currentItem.title, axis: .vertical)
+            }, icon: {
+                Image(systemName: currentItem.done == true ? "checkmark.circle" : "circle")
+                    // Tap to mark as done
+                    .onTapGesture {
+                        currentItem.done.toggle()
+                    }
+                
+            }
+        )
     }
 }
 
 #Preview {
-    SwiftUIView()
+    List {
+        ItemView(currentItem: .constant(firstItem))
+        ItemView(currentItem: .constant(secondItem))
+    }
 }

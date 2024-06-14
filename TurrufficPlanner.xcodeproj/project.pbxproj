@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0A193CAC2C11E6F200D8BDCD /* HouseholdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A193CAB2C11E6F200D8BDCD /* HouseholdView.swift */; };
+		0A1D9A262C135B380023E78F /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A252C135B380023E78F /* InformationView.swift */; };
+		0A1D9A282C1361CC0023E78F /* CompletedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A272C1361CC0023E78F /* CompletedListViewModel.swift */; };
+		0A1D9A2A2C1362250023E78F /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A292C1362250023E78F /* LandingView.swift */; };
+		0A1D9A2C2C1362CD0023E78F /* SwiftFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A2B2C1362CD0023E78F /* SwiftFile.swift */; };
+		0A1D9A2E2C1363240023E78F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9A2D2C1363240023E78F /* SwiftUIView.swift */; };
 		0AC84D522C0E460C005424F1 /* TurrufficPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC84D512C0E460C005424F1 /* TurrufficPlannerApp.swift */; };
 		0AC84D542C0E460C005424F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC84D532C0E460C005424F1 /* ContentView.swift */; };
 		0AC84D562C0E460E005424F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC84D552C0E460E005424F1 /* Assets.xcassets */; };
@@ -16,6 +21,11 @@
 
 /* Begin PBXFileReference section */
 		0A193CAB2C11E6F200D8BDCD /* HouseholdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdView.swift; sourceTree = "<group>"; };
+		0A1D9A252C135B380023E78F /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		0A1D9A272C1361CC0023E78F /* CompletedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedListViewModel.swift; sourceTree = "<group>"; };
+		0A1D9A292C1362250023E78F /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		0A1D9A2B2C1362CD0023E78F /* SwiftFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFile.swift; sourceTree = "<group>"; };
+		0A1D9A2D2C1363240023E78F /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		0AC84D4E2C0E460C005424F1 /* TurrufficPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurrufficPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC84D512C0E460C005424F1 /* TurrufficPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurrufficPlannerApp.swift; sourceTree = "<group>"; };
 		0AC84D532C0E460C005424F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,9 +65,14 @@
 			children = (
 				0AC84D512C0E460C005424F1 /* TurrufficPlannerApp.swift */,
 				0AC84D532C0E460C005424F1 /* ContentView.swift */,
+				0A1D9A252C135B380023E78F /* InformationView.swift */,
 				0A193CAB2C11E6F200D8BDCD /* HouseholdView.swift */,
+				0A1D9A292C1362250023E78F /* LandingView.swift */,
 				0AC84D552C0E460E005424F1 /* Assets.xcassets */,
 				0AC84D572C0E460E005424F1 /* Preview Content */,
+				0A1D9A2B2C1362CD0023E78F /* SwiftFile.swift */,
+				0A1D9A2D2C1363240023E78F /* SwiftUIView.swift */,
+				0A1D9A272C1361CC0023E78F /* CompletedListViewModel.swift */,
 			);
 			path = TurrufficPlanner;
 			sourceTree = "<group>";
@@ -140,7 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1D9A2A2C1362250023E78F /* LandingView.swift in Sources */,
 				0AC84D542C0E460C005424F1 /* ContentView.swift in Sources */,
+				0A1D9A2E2C1363240023E78F /* SwiftUIView.swift in Sources */,
+				0A1D9A282C1361CC0023E78F /* CompletedListViewModel.swift in Sources */,
+				0A1D9A262C135B380023E78F /* InformationView.swift in Sources */,
+				0A1D9A2C2C1362CD0023E78F /* SwiftFile.swift in Sources */,
 				0AC84D522C0E460C005424F1 /* TurrufficPlannerApp.swift in Sources */,
 				0A193CAC2C11E6F200D8BDCD /* HouseholdView.swift in Sources */,
 			);

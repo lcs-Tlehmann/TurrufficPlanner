@@ -73,19 +73,17 @@ struct HouseholdView: View {
                 }
                 Spacer()
                 
-                Button(action: {
-                    
-                }) {
+                NavigationLink(destination: LandingView()) {
                     Text("Continue")
                         .font(.system(size: 50, weight: .bold, design: .default))
                         .foregroundColor(.white)
                         .padding()
+                
                 }
-                
-                
                 
             }
         }
+        .navigationBarHidden(true)
     }
 }
 
