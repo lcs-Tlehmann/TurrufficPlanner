@@ -13,7 +13,9 @@ struct CareEventListView: View {
     
     // The item currently being added
     @State var newItemDescription = ""
-    
+    @State var careGiver = ""
+    @State var eventTime = ""
+    @State var petName = ""
     // The search text
     @State var searchText = ""
     
@@ -23,44 +25,57 @@ struct CareEventListView: View {
     // MARK: Computed properties
     var body: some View {
         NavigationView {
-                VStack {
+            VStack {
+                
+                List($viewModel.careEvents) { $currentCareEvent in
                     
-                    List($viewModel.careEvents) { $currentCareEvent in
-                        
-                        CareEventView(currentCareEvent: $currentCareEvent)
-                        // Delete item
-                            .swipeActions {
-                                Button(
-                                    "Delete",
-                                    role: .destructive,
-                                    action: {
-                                        viewModel.delete(currentCareEvent)
-                                    }
-                                )
-                            }
-                        
-                    }
-                    .searchable(text: $searchText)
-                    
-                    HStack {
-                        TextField("Enter a completed item", text: $newItemDescription)
-                        
-                        Button("ADD") {
-                            // Add the new to-do item
-                            viewModel.createCareEvents(withTitle: newItemDescription)
+                    CareEventView(currentCareEvent: $currentCareEvent)
+                    // Delete item
+                        .swipeActions {
+                            Button(
+                                "Delete",
+                                role: .destructive,
+                                action: {
+                                    viewModel.delete(currentCareEvent)
+                                }
+                            )
                         }
-                        .font(.caption)
-                    }
-                    .padding(20)
                     
                 }
-                .navigationTitle("Reminders")
+                .searchable(text: $searchText)
+                
+                
+                VStack{
+                    
+                    
+                    TextField("Event Description", text: $newItemDescription)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                        
+                }
+                Button("ADD") {
+                    // Add the new to-do item
+                    viewModel.createCareEvents(petName: petName, careGiverName: careGiver, description: newItemDescription, careTime: eventTime)
+                    careGiver = ""
+                    petName = ""
+                    newItemDescription = ""
+                    eventTime = ""
+                    
+                }
+                .disabled(newItemDescription.isEmpty)
+                .font(.caption)
+                .padding(.leading, 10)
                 
             }
-
+            .padding(20)
+            .navigationTitle("Events")
+        }
+        
+        
     }
 }
 
-#Preview {
+
+#Preview{
     CareEventListView()
 }

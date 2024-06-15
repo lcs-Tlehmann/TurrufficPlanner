@@ -9,22 +9,17 @@ import Foundation
 struct CareEvent: Identifiable {
     let id = UUID()
     var petName: String
-    var done:  Bool
+    var careGiverName: String
+    var description: String
+    var careTime = String()
 }
 
-let firstItem = CareEvent(petName: "Study for Chemisty quiz", done: false)
+let firstItem = CareEvent(petName: "Charm", careGiverName: "Hugo", description: "Fed",careTime: "7:00")
 
-let secondItem = CareEvent(petName: "Finish Computer Science assignment", done: true)
-
-let thirdItem = CareEvent(petName: "Go for a run around campus", done: false)
 
 let exampleItems = [
     
     firstItem
-    ,
-    secondItem
-    ,
-    thirdItem
     ,
     
 ]

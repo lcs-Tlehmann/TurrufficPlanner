@@ -58,8 +58,8 @@
 				0AC84D532C0E460C005424F1 /* ContentView.swift */,
 				0A1D9A252C135B380023E78F /* InformationView.swift */,
 				0A193CAB2C11E6F200D8BDCD /* HouseholdView.swift */,
-				0A1D9A292C1362250023E78F /* CareEventListView.swift */,
 				0A1D9A2D2C1363240023E78F /* CareEventView.swift */,
+				0A1D9A292C1362250023E78F /* CareEventListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

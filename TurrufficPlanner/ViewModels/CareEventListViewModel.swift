@@ -20,12 +20,18 @@ class CareEventListViewModel {
     }
     
     // MARK: Functions
-    func createCareEvents(withTitle title: String) {
+    func createCareEvents(
+        petName: String,
+        careGiverName: String,
+        description: String,
+        careTime: String
+    ) {
         
-        // Create the new to-do item instance
+        // Create the new care event instance
         let careEvent = CareEvent(
-            petName: title,
-            done: false
+            petName: petName,
+            careGiverName: careGiverName,
+            description: description
         )
         
         // Append to the array
