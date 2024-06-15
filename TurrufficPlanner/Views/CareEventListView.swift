@@ -13,9 +13,6 @@ struct CareEventListView: View {
     
     // The item currently being added
     @State var newItemDescription = ""
-    @State var careGiver = ""
-    @State var eventTime = ""
-    @State var petName = ""
     // The search text
     @State var searchText = ""
     
@@ -55,12 +52,7 @@ struct CareEventListView: View {
                 }
                 Button("ADD") {
                     // Add the new to-do item
-                    viewModel.createCareEvents(petName: petName, careGiverName: careGiver, description: newItemDescription, careTime: eventTime)
-                    careGiver = ""
-                    petName = ""
-                    newItemDescription = ""
-                    eventTime = ""
-                    
+                    viewModel.createCareEvents(petName: newItemDescription, careGiverName: newItemDescription, description: newItemDescription, careTime: newItemDescription)
                 }
                 .disabled(newItemDescription.isEmpty)
                 .font(.caption)
